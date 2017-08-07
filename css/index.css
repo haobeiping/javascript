@@ -1,0 +1,187 @@
+/*初始化*/
+body,h1,h2,h3,h4,ul,li,p{margin: 0;padding: 0;}
+body{font-family: "Microsoft yahei"}
+a{text-decoration: none;}
+/*自定义类*/
+.h1_text{font-size: 26px;color:#003A64;text-align: center;margin: 40px 0 30px 0;}
+.h2_text{font-size: 18px;color:#0060A5;text-align: center;margin-bottom: 20px;font-family: "Microsoft yahei"}
+.p_text{color:#868B90;font-size: 14px;text-indent: 2em;text-align: center}
+/*导航栏*/
+.nav{
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  z-index: 999;
+}
+.nav>img{width: 60px;height: 60px;margin-left: 10%;}
+.nav>span{
+  font-size: 20px;
+  position: absolute;
+  font-size: 26px;
+  font-family: "微软雅黑";
+  }
+
+.nav>ul{float: right;}
+.nav>ul li{list-style:none;float: left;}
+.nav>ul>li>a：hover{cursor: pointer;}
+.nav>ul>li>a{
+  color:#000;
+  margin-right: 30px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  display: block;
+  transition:color .3s,background-color .3s;
+  font-size:20px;
+}
+.nav>ul>li>a:hover{
+  color: #fff;
+  background-color: #2FA8EC;
+}
+/*蒙层*/
+.bg_pic{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  background-image: url('../img/bg1.jpg');
+  width: 100%;
+  height: 540px;
+}
+.mc{
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+.mc_text{
+  position: absolute;
+  top:40%;
+  left: 15%;
+  color: #fff;
+  font-size: 40px;
+}
+.mc_text>p:nth-child(2){
+  position: relative;
+  left: 70px;
+  top:40px;
+}
+/*about*/
+.about{
+  padding-bottom: 40px;
+}
+.about .container{overflow: hidden;}
+.about .detail{
+  padding:5px;
+  box-sizing: border-box;
+  min-height: 162px;
+}
+.text_introduce{
+  font-size: 16px;
+  text-indent: 2em;
+  color:#777;
+  padding:0 20px;
+  margin-bottom: 50px;
+}
+/*SEASONS*/
+.seasons{
+  padding:40px 0 40px 0;
+  background-color: #006444;
+  overflow: hidden;
+}
+.seasons h1{
+  color:#fff;
+  font-size: 26px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.seasons p{
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.seasons img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.seasons .detail{
+  padding:5px;
+  box-sizing: border-box;
+}
+/*图片*/
+.pic{
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.pic .cp_pic{
+  height: 200px;
+}
+.pic li{
+  padding:5px;
+}
+/*触碰鼠标*/
+.cp_pic{position:relative;overflow: hidden;float: left;}
+.cp_pic>img{width: 100%;height: 100%; transition: all 500ms ease-in-out;}
+.cp_pic>a{
+  display:block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color:#fff;
+  font-size: 14px;
+  text-decoration:none;
+  font-family: '微软雅黑';
+  text-align: center;
+  box-sizing: border-box;
+  opacity: 0;
+  background-color: #000;
+  transition: all .2s ease-out;
+}
+.cp_pic>a>p{position:absolute;top:0;left: 0;right: 0;margin:0 auto;}
+.cp_pic>a>p{transition: all .3s ease-out;padding:0 10px;}
+.cp_pic:hover p{top:50%;}
+.cp_pic:hover a{opacity: .6;}
+.cp_pic:hover img{-webkit-transform: scale(1.5);}
+/*潜山风光*/
+.qs_bg{
+  background-image: url('../img/qs_bg.png');
+  background-attachment: fixed;
+  background-position: center;
+  height: 400px;
+  background-size: auto 100%;
+  position: absolute;
+  width: 100%;
+}
+.qs_bg>.mb{
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+.qs_bg>.qs_bg_text p{
+  color:#fff;
+  font-family: "Microsoft yahei";
+  text-align: center;
+}
+.qs_bg>.qs_bg_text p:first-child{font-size: 24px;margin-bottom: 40px}
+.qs_bg>.qs_bg_text p:last-child{font-size: 18px;}
+.qs_bg>.qs_bg_text{
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left:0;
+  margin: 0 auto;
+}
+/*底部导航*/
+.foot_nav{
+  height: 100px;
+  background-color: #000;
+  text-align: center;
+}
+.foot_nav>p{
+  color:#fff;
+  font-size: 18px;
+  line-height: 20px;
+}

@@ -1,0 +1,22 @@
+”—«È¡¥Ω”≤•∑≈
+$(function(){
+
+	var $move_link=$('#move')
+		 setInterval(function(){
+		 	$move_link.animate({
+		 		left:"-200px"
+			},1000,function(){
+		 		$move_link.append($move_link.children().first());
+		 		$move_link.css('left',0);
+			})
+		 },2000)
+
+		setInterval(function(){
+			var left = parseInt($move_link.css('left'));
+			$move_link.css('left', left - 1);
+			if(left <= -200){
+				$move_link.append($move_link.children().first());
+				$move_link.css('left',0);
+			}
+		}, 10)
+})
